@@ -1,0 +1,666 @@
+body{
+    font-family: Helvetica;
+}
+
+/* navbar */
+a.nav-link{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.btn.btn-success {
+    background-color: #5CB85F;
+    color: #ffffff;
+    box-shadow: 1px 10px 30px -10px #023a0c;
+    display: inline-block;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 14px;
+}
+.btn.btn-success:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5CB85F;
+    z-index: -2;
+  }
+  
+  .btn.btn-success:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000000;
+    transition: all .3s;
+    z-index: -1;
+  }
+  
+  .btn.btn-success:hover {
+    color: #ffffff;
+  }
+  
+  .btn.btn-success:hover:before {
+    width: 100%;
+  }
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.box-shape{
+    height: 34px;
+    width: 100px;
+    background-color: #0D28A6;
+    transition: all .5s;
+} 
+
+.box-shape:hover {
+    transform: scale(1.1);
+ }
+
+
+/* OUR SERVICE */
+.services{
+    margin-bottom: 3%;
+}
+
+.container-checkbox{
+    font-family: Helvetica; 
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 14px; 
+    line-height: 20px;
+}
+
+img.check-box{
+    padding: 10px;
+}
+
+
+/* WHY US */
+.card {
+    transition: all .5s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+.picture-card{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.card-title{
+    padding-top: 6px;
+    font-family: Helvetica; 
+    font-style: normal;
+    font-weight: 700; 
+    font-size: 16px; 
+    line-height: 24px;
+}
+
+.card-text{
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-family: Helvetica; 
+    font-style: normal;
+    font-weight: 300; 
+    font-size: 14px; 
+    line-height: 20px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+
+/* TESTIMONIAL */
+.carousel-control-prev, .carousel-control-next{
+    position: static;
+    margin-top: 3%;
+    width: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.testi-text{
+    text-align: center; 
+    font-family: Helvetica; 
+    font-weight: 300; 
+    font-size: 14px; 
+    line-height: 20px;
+}
+
+
+
+/* Banner */
+.ban-title{
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.ban-text{
+    padding-top: 16px;
+    padding-bottom: 4%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+
+
+/* FAQ */
+
+button.accordion-button{
+    
+    border-radius: 4px;
+}
+
+div.accordion-item{
+    border: 1px 0px 0px 0px;
+    border-radius: 4px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+.accordion-button:not(.collapsed){
+    color: black;
+    background-color: white;
+    box-shadow: inset;
+    
+}
+
+.accordion-button{
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.accordion-body{
+    border: 1px solid #d4d4d4;
+    border-top: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+
+/*Footer*/
+.footer{
+    margin-top: 80px;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer .bi {
+    background-color: #0D28A6;
+    margin-right: 16px;
+    border-radius: 15px;
+    padding: 5px 7px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #0D28A6;
+  }
+  
+  .footer .col-md-2 a {
+    color: black;
+  }
+
+  
+  .footer .col-md-2 a:hover {
+    color: #0D28A6;
+  }
+  
+  .footer .bi:hover {
+    background-color: white;
+    border: 1px solid #0D28A6;
+    color: #0D28A6;
+    transition: .5s ease;
+  }
+
+
+
+
+/* responsive */
+@media screen and (min-width : 375px) and (max-width : 576px){
+    .container-mobil{
+        text-align: center;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+        padding-top: 10%;
+    }
+
+    .header-mobil{
+        font-size: 3rem;
+    }
+
+    .service-container{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .picture-service{
+        height: auto;
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 15%;
+        padding-top: 5%;
+    }
+
+    .card{
+        border-radius: 8px;
+        border-width: 1px;
+        height: 12.5rem;
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    #why-us{
+        text-align: center;
+    }
+
+    #why-us p{
+        padding-top: 1rem;
+    }
+
+    .services{
+        margin-bottom: 7%;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    #carousel-body{
+        height: 90%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        position: static;
+        
+    }
+
+    .rating{
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .testi-text{
+        padding-left: 10%;
+    }
+
+    .navbar-top{
+        display: none;
+    }
+
+    .faq-title{
+        text-align: center;
+        padding-bottom: 3%;
+        padding-top: 5%;
+    }
+
+    .offcanvas-end{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width : 576px) and (max-width : 767px){
+    .container-mobil{
+        text-align: center;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+    }
+    
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 5%;
+        padding-top: 3%;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    .card{
+        border-radius: 8px;
+        border-width: 1px;
+        height: 12.5rem;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    #why-us{
+        text-align: center;
+    }
+
+    .rating{
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #carousel-body{
+        height: 90%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        position: relative;
+    }
+
+    .testi-text{
+        padding-left: 10%;
+    }
+
+    .navbar-top{
+        display: none;
+    }
+
+    .offcanvas-end{
+        width: 60%;
+    }
+
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .offcanvas-end{
+        width: 45%;
+    }
+
+    .faq-title{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px){
+    .container-mobil{
+        text-align: start;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    #why-us{
+        text-align: center;
+    }
+
+    #carousel-body{
+        height: 95%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        position: relative;
+    }
+
+    .navbar-top{
+        display: none;
+    }
+
+    .service-container{
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .offcanvas-end{
+        width: 40%;
+    }
+
+    .faq-title{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 992px) and (max-width : 1200px){
+    .container-mobil{
+        text-align: end;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+    }
+    
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+    }
+
+    .card{
+        border-radius: 8px;
+        border-width: 1px;
+        height: 14rem;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .services{
+        padding-left: 17%;
+    }
+
+    #carousel-body{
+        height: 90%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 5%;
+        position: relative;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    .container-checkbox{
+        margin-left: 4.5rem;
+    }
+
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width : 1200px) and (max-width : 1440px){
+    .container-mobil{
+        text-align: end;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+    }
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 95%;
+        height: 90%;
+        padding-bottom: 5%;
+    }
+
+    .services{
+        padding-left: 14%;
+    }
+
+    #carousel-body{
+        height: 90%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 3%;
+        position: relative;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    .container-checkbox{
+        margin-left: 4.5rem;
+    }
+
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width : 1440px){
+    .container-mobil{
+        text-align: end;
+    }
+
+    .mobil{
+        height: auto;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .banner{
+        background-color: #0D28A6;
+        border-radius: 13px;
+        margin-top: 11%;
+        color: white;
+        width: 100%;
+        height: 90%;
+        padding-bottom: 3%;
+    }
+
+    .card{
+        border-radius: 8px;
+        border-width: 1px;
+        height: 13rem;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .services{
+        padding-left: 12%;
+    }
+
+    #carousel-body{
+        height: 90%;
+        width: 100%; 
+        background-color: #F1F3FF;
+        border-radius: 7px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        position: relative;
+    }
+
+    p span{
+        padding-right: 1rem; 
+    }
+
+    .container-checkbox{
+        margin-left: 4.7rem;
+    }
+
+    .binar{
+        margin-left: 3%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
